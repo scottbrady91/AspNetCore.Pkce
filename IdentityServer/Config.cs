@@ -33,7 +33,10 @@ namespace IdentityServer
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     ClientSecrets = {new Secret("acf2ec6fb01a4b698ba240c2b10a0243".Sha256())},
                     RedirectUris = {"http://localhost:5001/signin-oidc"},
-                    AllowedScopes = {"openid", "profile", "api1"}
+                    AllowedScopes = {"openid", "profile", "api1"},
+
+                    RequirePkce = true,
+                    AllowPlainTextPkce = false
                 }
             };
         }
