@@ -29,7 +29,7 @@ namespace PkceClient
 
                     options.ClientId = "pkce_client";
                     options.ClientSecret = "acf2ec6fb01a4b698ba240c2b10a0243";
-                    options.ResponseType = "code id_token";
+                    options.ResponseType = "code";
                     options.ResponseMode = "form_post";
                     options.CallbackPath = "/signin-oidc";
 

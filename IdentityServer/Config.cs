@@ -30,7 +30,7 @@ namespace IdentityServer
                 {
                     ClientId = "pkce_client",
                     ClientName = "MVC PKCE Client",
-                    AllowedGrantTypes = GrantTypes.Hybrid,
+                    AllowedGrantTypes = GrantTypes.Code,
                     ClientSecrets = {new Secret("acf2ec6fb01a4b698ba240c2b10a0243".Sha256())},
                     RedirectUris = {"http://localhost:5001/signin-oidc"},
                     AllowedScopes = {"openid", "profile", "api1"},
